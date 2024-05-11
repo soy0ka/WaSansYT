@@ -11,6 +11,6 @@ setInterval(() => {
 setInterval(() => {
   const images = document.querySelectorAll('#img')
   images.forEach(image => {
-    image.src = 'https://yt3.ggpht.com/966LjDCyir5MaS5ucz5nuDVb_RsyywFLSfdcTdQGkCxLZGA1XsGa1Spi9UNu3vm4HuU2N-2rIw=s900-c-k-c0x00ffffff-no-rj'
+    image.src = 'https://i.namu.wiki/i/tDLhwfXlzuxzU6_L4_ty3fsNxQYfgP_iynQKkr9uZvOEyqsr9Sqbr2w2sGPUGbfImvoF055KOeah_oRBweqq0g.gif'
   })
 }, 1000)
