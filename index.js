@@ -3,7 +3,10 @@ setInterval(() => {
   const votes = document.querySelectorAll('#vote-count-middle')
   let i = 0
   votes.forEach(vote => {
-    comments[i].textContent = `헉 이게 뭐라고...\n좋아요 ${vote.textContent.replace(/\\\n/g, '').replace(/\s/g,'')}개 감사합니다`
+    const likesCount = Number(vote.textContent.replace(/\\\n/g, '').replace(/\s/g,''))
+    const displayLike = isNaN(likeCount) ? '0' : likesCount
+    
+    comments[i].textContent = `헉 이게 뭐라고...\n좋아요 ${displayLike}개 감사합니다`
     i++
   })
 }, 1000)
