@@ -4,7 +4,7 @@ setInterval(() => {
   let i = 0
   votes.forEach(vote => {
     const likesCount = Number(vote.textContent.replace(/\\\n/g, '').replace(/\s/g,''))
-    const displayLike = isNaN(likeCount) ? '0' : likesCount
+    const displayLike = isNaN(likesCount) ? '0' : likesCount
     
     comments[i].textContent = `헉 이게 뭐라고...\n좋아요 ${displayLike}개 감사합니다`
     i++
